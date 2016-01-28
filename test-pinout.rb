@@ -2,7 +2,7 @@
 require_relative 'pinout';
 
 
-
+# allow for testing on a windows file system without gpio
 PinOut.override_gpio_sysfs_base_path('c:/usr/test/sys/class/gpio');
 
 pin_set = { 'alfa' => 0,
